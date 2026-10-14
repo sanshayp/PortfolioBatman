@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="26.01.0">
+<page number="1" position="absolute" top="0" left="0" height="1188" width="918">
+	<fontspec id="0" size="37" family="CBLFAT+CMCSC10" color="#000000"/>
+	<fontspec id="1" size="15" family="IIJGMT+FontAwesome5Free-Solid" color="#000000"/>
+	<fontspec id="2" size="15" family="GNABNI+CMR10" color="#000000"/>
+	<fontspec id="3" size="15" family="XDJWFC+CMSY10" color="#000000"/>
+	<fontspec id="4" size="18" family="WOMDEZ+CMBX12" color="#000000"/>
+	<fontspec id="5" size="15" family="XBCNEK+CMBX10" color="#000000"/>
+	<fontspec id="6" size="15" family="WBJCMP+CMTI10" color="#000000"/>
+	<fontspec id="7" size="9" family="ZIDBBK+CMSY6" color="#000000"/>
+<text top="39" left="306" width="305" height="32" font="0">Sanshay Patiyal</text>
+<text top="67" left="126" width="15" height="15" font="1"></text>
+<text top="68" left="146" width="75" height="13" font="2">7876531383</text>
+<text top="68" left="235" width="4" height="14" font="3">|</text>
+<text top="68" left="254" width="196" height="13" font="2"><a href="mailto:sanshaypatiyal406@gmail.com">sanshaypatiyal406@gmail.com</a></text>
+<text top="68" left="466" width="4" height="14" font="3">|</text>
+<text top="68" left="485" width="282" height="13" font="2"><a href="https://www.linkedin.com/in/sanshay-patiyal-2984723a2">linkedin.com/in/sanshay-patiyal-2984723a2</a></text>
+<text top="68" left="782" width="4" height="14" font="3">|</text>
+<text top="89" left="215" width="139" height="13" font="2"><a href="https://github.com/sanshayp">github.com/sanshayp</a></text>
+<text top="88" left="370" width="4" height="14" font="3">|</text>
+<text top="89" left="389" width="160" height="13" font="2"><a href="https://leetcode.com/u/Sanshay/">leetcode.com/u/Sanshay</a></text>
+<text top="88" left="564" width="4" height="14" font="3">|</text>
+<text top="89" left="583" width="119" height="13" font="2"><a href="https://x.com/sanshaytwt">x.com/sanshaytwt</a></text>
+<text top="117" left="43" width="85" height="16" font="4">Objective</text>
+<text top="145" left="43" width="801" height="13" font="2">Computer Science Engineering student passionate about software development, problem-solving, and backend engineering.</text>
+<text top="163" left="43" width="819" height="13" font="2">Seeking opportunities to apply my skills in Java, Spring Boot, and web development while contributing to impactful projects</text>
+<text top="181" left="43" width="197" height="13" font="2">and open-source communities.</text>
+<text top="206" left="43" width="89" height="16" font="4">Education</text>
+<text top="234" left="43" width="149" height="13" font="5">Chitkara University</text>
+<text top="234" left="698" width="176" height="13" font="5">Rajpura, Punjab, India</text>
+<text top="251" left="43" width="236" height="13" font="6">B.E. Computer Science Engineering</text>
+<text top="251" left="284" width="4" height="14" font="3">|</text>
+<text top="251" left="294" width="113" height="13" font="6">CGPA: 9.94 / 10</text>
+<text top="251" left="792" width="79" height="13" font="6">2025 – 2029</text>
+<text top="272" left="43" width="345" height="13" font="5">Himachal Pradesh Board of School Education</text>
+<text top="290" left="43" width="62" height="13" font="6">Class XII</text>
+<text top="289" left="111" width="4" height="14" font="3">|</text>
+<text top="290" left="120" width="121" height="13" font="6">Percentage: 81.4%</text>
+<text top="310" left="43" width="345" height="13" font="5">Himachal Pradesh Board of School Education</text>
+<text top="328" left="43" width="51" height="13" font="6">Class X</text>
+<text top="327" left="99" width="4" height="14" font="3">|</text>
+<text top="328" left="109" width="121" height="13" font="6">Percentage: 92.4%</text>
+<text top="356" left="43" width="73" height="16" font="4">Projects</text>
+<text top="384" left="43" width="371" height="13" font="5">WYD – Video Chat &amp; Social Discovery Platform</text>
+<text top="384" left="430" width="53" height="13" font="2"><a href="https://wydlive.app/">— View</a></text>
+<text top="384" left="840" width="34" height="13" font="5">2026</text>
+<text top="427" left="65" width="6" height="8" font="7">•</text>
+<text top="425" left="79" width="790" height="13" font="2">Built a campus-focused social discovery platform featuring real-time 1-on-1 video matching and regional text lounges for</text>
+<text top="443" left="79" width="107" height="13" font="2">college students.</text>
+<text top="466" left="65" width="6" height="8" font="7">•</text>
+<text top="464" left="79" width="754" height="13" font="2">Developed a responsive interface using React, Vite, and CSS, with animated UI components, floating capsules, and</text>
+<text top="482" left="79" width="125" height="13" font="2">custom transitions.</text>
+<text top="505" left="65" width="6" height="8" font="7">•</text>
+<text top="503" left="79" width="707" height="13" font="2">Integrated a FastAPI backend architecture for supporting authentication and real-time application features.</text>
+<text top="526" left="65" width="6" height="8" font="7">•</text>
+<text top="524" left="79" width="774" height="13" font="2">Implemented Google sign-in integration to support account authentication and campus-domain verification workflows.</text>
+<text top="550" left="43" width="323" height="13" font="5">RepFuelAI – Fitness &amp; Nutrition Platform</text>
+<text top="550" left="382" width="53" height="13" font="2"><a href="https://repfuelai.vercel.app/">— View</a></text>
+<text top="550" left="840" width="34" height="13" font="5">2026</text>
+<text top="593" left="65" width="6" height="8" font="7">•</text>
+<text top="591" left="79" width="762" height="13" font="2">Developed a responsive fitness platform with searchable workout routines and multi-parameter filtering by difficulty,</text>
+<text top="609" left="79" width="248" height="13" font="2">duration, fitness goal, and equipment.</text>
+<text top="632" left="65" width="6" height="8" font="7">•</text>
+<text top="630" left="79" width="788" height="13" font="2">Built interactive workout details and training guides covering 8 training disciplines, including exercises, sets, repetitions,</text>
+<text top="648" left="79" width="110" height="13" font="2">and rest periods.</text>
+<text top="671" left="65" width="6" height="8" font="7">•</text>
+<text top="669" left="79" width="792" height="13" font="2">Implemented an interactive BMI calculator and a persistent dark/light theme using React Context API and CSS custom</text>
+<text top="687" left="79" width="69" height="13" font="2">properties.</text>
+<text top="710" left="65" width="6" height="8" font="7">•</text>
+<text top="708" left="79" width="605" height="13" font="2">Configured client-side navigation with React Router and deployed the application on Vercel.</text>
+<text top="731" left="43" width="136" height="16" font="4">Technical Skills</text>
+<text top="764" left="59" width="83" height="13" font="5">Languages:</text>
+<text top="764" left="149" width="222" height="13" font="2">Java, C, Python, JavaScript, SQL</text>
+<text top="787" left="59" width="139" height="13" font="5">Web Technologies:</text>
+<text top="787" left="205" width="128" height="13" font="2">HTML, CSS, React</text>
+<text top="811" left="59" width="206" height="13" font="5">Frameworks &amp; Build Tools:</text>
+<text top="811" left="272" width="95" height="13" font="2">Spring, Maven</text>
+<text top="835" left="59" width="81" height="13" font="5">Databases:</text>
+<text top="835" left="147" width="99" height="13" font="2">SQL, Supabase</text>
+<text top="859" left="59" width="126" height="13" font="5">Developer Tools:</text>
+<text top="859" left="192" width="127" height="13" font="2">Git, GitHub, Linux</text>
+<text top="883" left="59" width="183" height="13" font="5">Core Computer Science:</text>
+<text top="883" left="249" width="469" height="13" font="2">Data Structures &amp; Algorithms (DSA), Operating Systems (OS), DBMS</text>
+<text top="912" left="43" width="222" height="16" font="4">Learning &amp; Development</text>
+<text top="947" left="65" width="6" height="8" font="7">•</text>
+<text top="945" left="79" width="615" height="13" font="2">Strengthening Data Structures and Algorithms through regular problem-solving on LeetCode.</text>
+<text top="968" left="65" width="6" height="8" font="7">•</text>
+<text top="966" left="79" width="557" height="13" font="2">Learning backend development with Java, Spring Boot, SQL, and REST API design.</text>
+<text top="989" left="65" width="6" height="8" font="7">•</text>
+<text top="987" left="79" width="660" height="13" font="2">Exploring open-source contribution workflows, Git, GitHub, and collaborative software development.</text>
+</page>
+<outline>
+<item page="1">Objective</item>
+<item page="1">Education</item>
+<item page="1">Projects</item>
+<item page="1">Technical Skills</item>
+<item page="1">Learning &amp; Development</item>
+</outline>
+</pdf2xml>
