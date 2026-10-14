@@ -19,7 +19,7 @@ export const profile = {
     },
     { label: "X", shortLabel: "X", href: "https://x.com/sanshaytwt" },
   ],
-  resumeHref: "/resume.pdf",
+  resumeHref: `${import.meta.env.BASE_URL}resume.pdf`,
   education: [
     {
       institution: "Chitkara University",
