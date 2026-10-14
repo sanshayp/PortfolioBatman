@@ -18,3 +18,4 @@ export default defineConfig({
   base: getBasePath(),
   plugins: [react()],
 });
+
