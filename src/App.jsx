@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { profile } from "./data/profile.js";
 
 const navItems = [
-  { href: "#origin", label: "Origin story" },
-  { href: "#case-files", label: "Case files" },
-  { href: "#utility-belt", label: "Utility belt" },
-  { href: "#training", label: "Training grounds" },
-  { href: "#contact", label: "Call signal" },
+  { href: "#origin-heading", sectionId: "origin", label: "Origin story" },
+  { href: "#files-heading", sectionId: "case-files", label: "Case files" },
+  { href: "#skills-heading", sectionId: "utility-belt", label: "Utility belt" },
+  { href: "#training-heading", sectionId: "training", label: "Training grounds" },
+  { href: "#contact-heading", sectionId: "contact", label: "Call signal" },
 ];
 
 function ArrowIcon({ diagonal = false }) {
@@ -96,9 +96,9 @@ function SocialLinks({ compact = false }) {
   );
 }
 
-function SectionHeading({ eyebrow, title, plainLabel, number, id }) {
+function SectionHeading({ eyebrow, title, plainLabel, number, id, anchorId }) {
   return (
-    <div className="section-heading">
+    <div className="section-heading" id={anchorId}>
       <div className="section-heading__index">
         <span>{number}</span>
         <span className="section-heading__rule" />
@@ -111,7 +111,7 @@ function SectionHeading({ eyebrow, title, plainLabel, number, id }) {
   );
 }
 
-function Header({ activeSection }) {
+function Header({ activeSection, onNavigate }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -148,9 +148,12 @@ function Header({ activeSection }) {
           <a
             href={item.href}
             key={item.href}
-            className={activeSection === item.href.slice(1) ? "is-active" : ""}
-            aria-current={activeSection === item.href.slice(1) ? "location" : undefined}
-            onClick={() => setMenuOpen(false)}
+            className={activeSection === item.sectionId ? "is-active" : ""}
+            aria-current={activeSection === item.sectionId ? "location" : undefined}
+            onClick={() => {
+              onNavigate(item.sectionId);
+              setMenuOpen(false);
+            }}
           >
             {item.label}
           </a>
@@ -213,7 +216,7 @@ function Hero() {
         </h1>
         <p className="hero__intro">{profile.objective}</p>
         <div className="hero__actions">
-          <a className="button button--signal" href="#case-files">
+          <a className="button button--signal" href="#files-heading">
             Explore case files <ArrowIcon />
           </a>
           {profile.resumeHref ? (
@@ -240,6 +243,7 @@ function Education() {
     <section className="section section--origin" id="origin" aria-labelledby="origin-title">
       <div className="page-shell">
         <SectionHeading
+          anchorId="origin-heading"
           id="origin-title"
           number="01"
           eyebrow="THE BEGINNING"
@@ -317,6 +321,7 @@ function Projects() {
     <section className="section section--files" id="case-files" aria-labelledby="files-title">
       <div className="page-shell">
         <SectionHeading
+          anchorId="files-heading"
           id="files-title"
           number="02"
           eyebrow="FIELD REPORTS"
@@ -340,6 +345,7 @@ function Skills() {
     <section className="section section--skills" id="utility-belt" aria-labelledby="skills-title">
       <div className="page-shell">
         <SectionHeading
+          anchorId="skills-heading"
           id="skills-title"
           number="03"
           eyebrow="TOOLS OF THE TRADE"
@@ -375,6 +381,7 @@ function Training() {
     <section className="section section--training" id="training" aria-labelledby="training-title">
       <div className="page-shell">
         <SectionHeading
+          anchorId="training-heading"
           id="training-title"
           number="04"
           eyebrow="ALWAYS IN TRAINING"
@@ -408,6 +415,7 @@ function Contact() {
       <div className="page-shell contact-layout">
         <div>
           <SectionHeading
+            anchorId="contact-heading"
             id="contact-title"
             number="05"
             eyebrow="YOUR MOVE"
@@ -475,25 +483,30 @@ export default function App() {
 
   useEffect(() => {
     const sections = navItems
-      .map(({ href }) => document.querySelector(href))
+      .map(({ sectionId }) => document.getElementById(sectionId))
       .filter(Boolean);
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible) setActiveSection(visible.target.id);
-      },
-      { rootMargin: "-20% 0px -60% 0px", threshold: [0, 0.2, 0.5, 0.8] },
-    );
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+    const updateActiveSection = () => {
+      const activationLine = window.innerHeight * 0.3;
+      let currentSection = "";
+      for (const section of sections) {
+        if (section.getBoundingClientRect().top > activationLine) break;
+        currentSection = section.id;
+      }
+      setActiveSection(currentSection);
+    };
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
   }, []);
 
   return (
     <>
       <a className="skip-link" href="#main">Skip to content</a>
-      <Header activeSection={activeSection} />
+      <Header activeSection={activeSection} onNavigate={setActiveSection} />
       <main id="main">
         <Hero />
         <Education />
